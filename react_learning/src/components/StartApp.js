@@ -1,13 +1,10 @@
-const callmethod = ()=> {
-  console.log("Hey this is sam")
-}
+import Home from './Home';
 
 // functional component - Main page
 function StartApp() {
   return (
     <div>
-        <button type="button" onClick={()=>callmethod()}>Sample button</button>
-      <div>This is start page</div>
+        <Home />
     </div>
   );
 }
