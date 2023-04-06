@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import Button from '@mui/material/Button';
+import StatePlaygroundCls from './StatePlagroundCls';
+import StatePlaygroundF from './StatePlaygroundF';
 
 
 const callmethod = async()=> {
@@ -10,18 +12,21 @@ const callmethod = async()=> {
         console.log(jsonData);
   }
   
-  const callmethod2 = ()=> {
-    console.log("Hey this is sam from button 2")
-  }
 
 class Home extends React.Component {
+    callmethod2 = () => {
+        console.log("Hey this is sam from button 2 + func inside class component")
+    }
+
     render() {
       return (
       <div>
         <Header />
-        <button type="button" onClick={()=>callmethod()}>Sample button</button>
-        <button type="button" onClick={callmethod2}>Sample button 2</button>
+        <button type="button" onClick={()=>callmethod()} value="func outside class component">Button F1</button>
+        <button type="button" onClick={this.callmethod2} value="func inside class component">Button F2</button>
         <Button variant="outlined">using MUI</Button>
+        <StatePlaygroundCls></StatePlaygroundCls>
+        <StatePlaygroundF></StatePlaygroundF>
       </div> 
       );
     }

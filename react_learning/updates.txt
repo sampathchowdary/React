@@ -1,0 +1,5 @@
+Commit  branch                  Commit Id           About                                                               any errors
+1       master                  c49b52a             created react app
+2       react/part_1            66fcc86             Basic component to start
+3       react/part_1            81be109             material ui added + using MUI header component created + sample button to work around
+
