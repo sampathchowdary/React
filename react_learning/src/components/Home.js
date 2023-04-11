@@ -3,11 +3,12 @@ import Header from './Header';
 import Button from '@mui/material/Button';
 import StatePlaygroundCls from './StatePlagroundCls';
 import StatePlaygroundF from './StatePlaygroundF';
+import { APICALL_DUM } from './constants';
 
 
 const callmethod = async()=> {
     console.log("Hey this is sam")
-        const response = await fetch("https://dummyjson.com/products/1");
+        const response = await fetch(APICALL_DUM);
         const jsonData = await response.json();
         console.log(jsonData);
   }
