@@ -1,6 +1,8 @@
 import { Button, Icon } from '@mui/material';
 import { useState } from 'react';
 import { GetProducts } from './Network/NetworkUtil';
+import Level1Child1 from './Level1Child1';
+import Level1Child2 from './Level1Child2';
 
 // functional component - using state
 function StatePlaygroundCls() {
@@ -36,6 +38,9 @@ function StatePlaygroundCls() {
             <Icon>{Count} </Icon>
             <Button onClick={getApiInfo}>api call</Button>
             <div>{apiData.brand}</div>
+            {/* using child1 and child2 demonstrating props and respective updates in diff childs */}
+            <Level1Child1 data={Count} increase={addcount} decrease={reducecount} />
+            <Level1Child2 data={Count} increase={addcount} decrease={reducecount} />
             </div>
         );
 }
