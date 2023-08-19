@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { GetProducts } from './Network/NetworkUtil';
 import Level1Child1 from './Level1Child1';
 import Level1Child2 from './Level1Child2';
+import { useStore } from 'react-redux';
 
 // functional component - using state
 function StatePlaygroundCls() {
@@ -10,7 +11,7 @@ function StatePlaygroundCls() {
     const [Brand, setBrand] = useState("");
     const [Count, setCount] = useState(0);
     const [apiData, setapiData] = useState({});
-
+    const { age } = useStore
    const callmethod2 = () => {
         console.log(" state information usestate", Brand);
         setBrand("Benz");
