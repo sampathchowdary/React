@@ -22,7 +22,7 @@ function PlayGround() {
   return (
     <div>
         <input id='input' type='text' ></input>
-        <button title='click' onClick={checkPattern}> clcicc</button>
+        <button title='click' onClick={checkPattern}> click</button>
     </div>
   );
 }

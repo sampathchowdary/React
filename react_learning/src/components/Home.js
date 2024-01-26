@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import StatePlaygroundCls from './StatePlagroundCls';
 import StatePlaygroundF from './StatePlaygroundF';
 import { APICALL_DUM } from './constants';
+import { DisplayDataFC } from './DisplayDataFC';
 
 
 const callmethod = async()=> {
@@ -22,12 +23,14 @@ class Home extends React.Component {
     render() {
       return (
       <div>
-        <Header />
-        <button type="button" onClick={()=>callmethod()} value="func outside class component">Button F1</button>
+        {/* <Header /> */}
+        {/* <button type="button" onClick={()=>callmethod()} value="func outside class component">Button F1</button>
         <button type="button" onClick={this.callmethod2} value="func inside class component">Button F2</button>
         <Button variant="outlined">using MUI</Button>
-        <StatePlaygroundCls></StatePlaygroundCls>
-        <StatePlaygroundF></StatePlaygroundF>
+        <StatePlaygroundCls></StatePlaygroundCls> */}
+        {/* <StatePlaygroundF></StatePlaygroundF> */}
+
+        <DisplayDataFC />
       </div> 
       );
     }

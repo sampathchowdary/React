@@ -20,4 +20,4 @@ function counterReducer(state = instialState, action) {
 
 // export const { INCREMENTCOUNTER } = counterReducer.actions
 
-export default counterReducer.counterReducer;
+export default counterReducer;

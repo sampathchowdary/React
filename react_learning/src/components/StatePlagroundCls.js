@@ -39,8 +39,8 @@ class StatePlaygroundCls extends Component {
          // destructuring the state values
         const { count, apiInfo } = this.state;
         return (
-            <div>
-            <button type="button" onClick={this.callmethod2}>update brand button 2</button>
+            <div style={{marginTop: '30px'}}>
+            <button type="button" onClick={this.callmethod2}>update brand button 2 using class component</button>
             <div>car brand {this.state.brand}</div>
             <Button onClick={this.addcount}>increment</Button>
             <Button onClick={this.reducecount}>decrement</Button>
